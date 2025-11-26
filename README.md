@@ -1,12 +1,17 @@
-# Matrix Morpheus GRUB Theme
+# Matrix Morpheus GRUB Theme (Ubuntu Version)
 **Red Pill vs Blue Pill**
 
 Tema minimalista inspirado en Matrix para GRUB con fondos dinámicos a pantalla completa que cambian entre Linux y Windows.
 
+Fork modificado del [tema original de Priyank-Adhav](https://github.com/Priyank-Adhav/Matrix-Morpheus-GRUB-Theme), adaptado para **Ubuntu + Windows** dual-boot.
+
 ---
 
-**Configuración actual:**  
-Este tema está configurado para **Ubuntu + Windows** dual-boot.
+**Características de esta versión:**
+- Detección automática de distribución Linux
+- Configuración automática de resolución 1920x1080
+- Simplificación del menú GRUB (solo Ubuntu y Windows)
+- Deshabilitación automática de entradas extra (memtest, recovery, etc.)
 
 Los iconos están ordenados horizontalmente en pantalla,  
 pero se navega usando las teclas **Arriba** y **Abajo** como en un menú GRUB normal.
@@ -17,16 +22,16 @@ pero se navega usando las teclas **Arriba** y **Abajo** como en un menú GRUB no
 
 ## Instalación
 
-1. Clona el repositorio (o si ya lo tienes, salta al paso 2)
+1. Clona el repositorio
 
 ```shell
-git clone https://github.com/Priyank-Adhav/Matrix-Morpheus-GRUB-Theme
+git clone https://github.com/rflvz/Matrix-Morpheus-GRUB-Theme-ubuntu-version
 ```
 
 2. Entra en la carpeta
 
 ```shell
-cd Matrix-Morpheus-GRUB-Theme
+cd Matrix-Morpheus-GRUB-Theme-ubuntu-version
 ```
 
 3. Haz el instalador ejecutable
@@ -49,4 +54,9 @@ sudo ./install.sh
 
 - El script crea automáticamente los iconos necesarios para Ubuntu (`ubuntu.png`, `gnu-linux.png`, `linux.png`) a partir de la imagen base.
 - Windows usa `windows.png` que ya viene incluido.
-- Si GRUB tiene entradas adicionales (como "Advanced options" o "UEFI Firmware Settings"), considera ocultarlas para una experiencia visual más limpia.
+- El script deshabilita automáticamente las entradas extra de GRUB para dejar solo Ubuntu y Windows.
+- Si tienes varios kernels instalados, considera eliminar los antiguos con `sudo apt autoremove`.
+
+## Créditos
+
+Tema original por [Priyank-Adhav](https://github.com/Priyank-Adhav/Matrix-Morpheus-GRUB-Theme)
