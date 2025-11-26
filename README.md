@@ -1,54 +1,52 @@
 # Matrix Morpheus GRUB Theme
 **Red Pill vs Blue Pill**
 
-A minimalist Matrix-inspired GRUB theme featuring full-screen dynamic backgrounds that change between Linux and Windows.
+Tema minimalista inspirado en Matrix para GRUB con fondos dinámicos a pantalla completa que cambian entre Linux y Windows.
 
 ---
 
-**Note:**  
-Currently, the theme only includes the **Arch Linux** and **Windows** icons.  
- 
-Also, while the icons are **arranged horizontally** on screen,  
-you still navigate using the **Up** and **Down arrow keys** as in a normal GRUB menu.
+**Configuración actual:**  
+Este tema está configurado para **Ubuntu + Windows** dual-boot.
+
+Los iconos están ordenados horizontalmente en pantalla,  
+pero se navega usando las teclas **Arriba** y **Abajo** como en un menú GRUB normal.
 
 ---
-![Matrix Morpheus GRUB Theme preview showing Arch and Windows boot icons](preview.gif)
-## Installation
 
-1. Clone the repo
+![Matrix Morpheus GRUB Theme preview](preview.gif)
+
+## Instalación
+
+1. Clona el repositorio (o si ya lo tienes, salta al paso 2)
 
 ```shell
 git clone https://github.com/Priyank-Adhav/Matrix-Morpheus-GRUB-Theme
 ```
 
-2. Go into the folder 
+2. Entra en la carpeta
 
 ```shell
 cd Matrix-Morpheus-GRUB-Theme
 ```
 
-3. Make the installer executable
+3. Haz el instalador ejecutable
 
 ```shell
 chmod +x install.sh
 ```
 
-4. Execute the installation script as admin
+4. Ejecuta el script de instalación como administrador
 
 ```shell
 sudo ./install.sh
 ```
 
-5. Reboot to test your new theme
+5. Reinicia para ver tu nuevo tema
 
 ---
-Optional: Simplify Your GRUB Menu
 
-I designed this theme for a two entry layout and haven't really thought about how to visually handle the additional entries. 
+## Notas
 
-If your GRUB menu currently has extra entries such as:
-
-- “Advanced options for Arch Linux”
-- “UEFI Firmware Settings”
-
-I would recommend you remove the extra menu entries from the grub config if you don't use them.
+- El script crea automáticamente los iconos necesarios para Ubuntu (`ubuntu.png`, `gnu-linux.png`, `linux.png`) a partir de la imagen base.
+- Windows usa `windows.png` que ya viene incluido.
+- Si GRUB tiene entradas adicionales (como "Advanced options" o "UEFI Firmware Settings"), considera ocultarlas para una experiencia visual más limpia.
